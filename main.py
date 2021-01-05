@@ -2,9 +2,9 @@ import COVID19Py
 import telebot
 from telebot import types
 from threading import Thread
-import secret
+import Key_python
 covid19 = COVID19Py.COVID19()
-bot = telebot.TeleBot(secret.Telegram_token)
+bot = telebot.TeleBot(Key_python.Telegram_token)
 
 
 @bot.message_handler(commands=['start'])
